@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://www.astromatic.net/download/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a16f9c2bd653763b5e1629e538d49f63882c46291b479b4a4997de84d8e9fb0f
+  url: https://github.com/astromatic/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 0521bcf3fad4b362870ef06ca39b96fd85b6a1e5235192db551a4406df8a46c2
 
 build:
   skip: true  # [win]
@@ -16,6 +16,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
   host:
     - fftw
@@ -30,7 +31,7 @@ test:
 
 about:
   home: https://www.astromatic.net/software/skymaker
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: 'SkyMaker is a program that simulates astronomical images'

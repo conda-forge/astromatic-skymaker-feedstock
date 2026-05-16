@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/astromatic-skym
 
 Home: https://www.astromatic.net/software/skymaker
 
-Package license: GPL-3.0
+Package license: GPL-3.0-only
 
 Summary: SkyMaker is a program that simulates astronomical images
 
